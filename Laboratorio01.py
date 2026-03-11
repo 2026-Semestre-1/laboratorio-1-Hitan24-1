@@ -79,7 +79,7 @@ si distancia es un num positivo, el valor fin debe ser mayor a inicio.
 def sumatoria_V2(inicio, fin, distancia, excepcion):
     if not isinstance(inicio, int) or not isinstance(fin, int) or not isinstance(distancia, int) or not isinstance(excepcion, int):
         return "Todos los parametros deben ser enteros"
-    if not inicio > 10 or not inicio < 0:
+    if not inicio < 10 or not inicio > 0:
         return "Inicio deber ser  un parametro de 1 a 9"
     if not fin > 10 or not fin < 0:
         return "Fin deber ser  un parametro de 1 a 9"
