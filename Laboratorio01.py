@@ -81,7 +81,7 @@ def sumatoria_V2(inicio, fin, distancia, excepcion):
         return "Todos los parametros deben ser enteros"
     if not inicio < 10 or not inicio > 0:
         return "Inicio deber ser  un parametro de 1 a 9"
-    if not fin > 10 or not fin < 0:
+    if not fin < 10 or not fin > 0:
         return "Fin deber ser  un parametro de 1 a 9"
     if not (distancia < 10) or (distancia > 0) and (distancia > -10) or (distancia<0):
         return "El parametro distancia debe ser un valor de -9 a 9"
